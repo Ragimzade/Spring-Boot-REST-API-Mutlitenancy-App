@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.7.14'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+bootJar {
+    duplicatesStrategy(DuplicatesStrategy.EXCLUDE)
+}
+
+java {
+    sourceCompatibility = '17'
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.liquibase:liquibase-core'
+    compileOnly 'org.projectlombok:lombok'
+    runtimeOnly 'org.postgresql:postgresql'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.security:spring-security-test'
+
+    implementation 'com.sap.cloud.security.xsuaa:xsuaa-spring-boot-starter:2.12.1'
+    implementation 'com.sap.cloud.s4hana:s4hana-all:2.28.0'
+
+    implementation 'org.springframework.cloud:spring-cloud-spring-service-connector:2.0.7.RELEASE'
+    implementation 'org.springframework.cloud:spring-cloud-cloudfoundry-connector:2.0.7.RELEASE'
+
+
+    implementation 'com.sap.cloud.sdk.cloudplatform:cloudplatform-core:4.19.0'
+    implementation 'com.sap.cloud.sdk.cloudplatform:cloudplatform-connectivity:4.19.0'
+
+
+}
+
