@@ -1,9 +1,10 @@
 package com.example.springbootcrudapp.configuration;
 
+
 import com.example.springbootcrudapp.util.TenantUtil;
+import lombok.RequiredArgsConstructor;
 import org.hibernate.HibernateException;
 import org.hibernate.engine.jdbc.connections.spi.MultiTenantConnectionProvider;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -12,13 +13,13 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 @Component
+@RequiredArgsConstructor
 public class SchemaPerTenantConnectionProvider implements MultiTenantConnectionProvider {
 
-    @Autowired
-    private DataSource dataSource;
+    private final DataSource dataSource;
 
     @Value("${multitenant.defaultTenant}")
-    private String defaultTenant;
+    String defaultTenant;
 
     @Override
     public Connection getAnyConnection() throws SQLException {

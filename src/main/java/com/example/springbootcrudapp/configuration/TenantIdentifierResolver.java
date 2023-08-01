@@ -6,11 +6,9 @@ import org.hibernate.context.spi.CurrentTenantIdentifierResolver;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-
 @Component
 @Slf4j
-public class TenantIdentifierResolver implements CurrentTenantIdentifierResolver{
-
+public class TenantIdentifierResolver implements CurrentTenantIdentifierResolver {
 
     @Value("${multitenant.defaultTenant}")
     String defaultTenant;

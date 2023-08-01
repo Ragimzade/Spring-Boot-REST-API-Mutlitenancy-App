@@ -1,8 +1,8 @@
 applications:
 
-  - name: crud-app
+  - name: books-spring-app
     random-route: true
-    path: ./build/libs/springboot-crud-app-0.0.1-SNAPSHOT.jar
+    path: ./target/books-spring-app-0.0.1-SNAPSHOT.jar
     memory: 1024M
     buildpack: sap_java_buildpack
     env:
@@ -10,7 +10,9 @@ applications:
       JBP_CONFIG_COMPONENTS: "jres: ['com.sap.xs.java.buildpack.jdk.SAPMachineJDK']"
       JBP_CONFIG_SAP_MACHINE_JDK: "{ version: 17.+ }"
     services:
-      - javauaa
+      - xsuaa
+      - books-postgres-db
+      - saas-registry
 
   - name: approuter
     random-route: true
@@ -20,10 +22,13 @@ applications:
       destinations: >
         [
           {
-            "name": "crud-app",
-            "url": "https://crud-app-reflective-bushbuck-zg.cfapps.us10-001.hana.ondemand.com/",
+            "name": "books-spring-app",
+            "url": "https://books-spring-app-courteous-guanaco-et.cfapps.us10-001.hana.ondemand.com/",
             "forwardAuthToken": true
           }
         ]
+      TENANT_HOST_PATTERN: "^(.*)-approuter-courteous-whale-ib.cfapps.us10-001.hana.ondemand.com"
     services:
-      - javauaa
+      - xsuaa
+
+

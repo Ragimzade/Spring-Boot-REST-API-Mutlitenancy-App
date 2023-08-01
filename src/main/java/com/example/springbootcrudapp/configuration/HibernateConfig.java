@@ -14,10 +14,8 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import javax.sql.DataSource;
 import java.util.HashMap;
 import java.util.Map;
-
-
 @Configuration
-public class MultiTenantSchemaHibernateConfiguration {
+public class HibernateConfig {
 
     @Bean
     public JpaVendorAdapter jpaVendorAdapter() {

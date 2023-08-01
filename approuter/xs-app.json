@@ -3,7 +3,7 @@
     {
       "source": "^(.*)$",
       "target": "$1",
-      "destination": "crud-app"
+      "destination": "books-spring-app"
     }
   ]
 }
