@@ -40,11 +40,7 @@ dependencies {
 
     implementation 'org.springframework.cloud:spring-cloud-spring-service-connector:2.0.7.RELEASE'
     implementation 'org.springframework.cloud:spring-cloud-cloudfoundry-connector:2.0.7.RELEASE'
-
-
     implementation 'com.sap.cloud.sdk.cloudplatform:cloudplatform-core:4.19.0'
     implementation 'com.sap.cloud.sdk.cloudplatform:cloudplatform-connectivity:4.19.0'
-
-
 }
 
