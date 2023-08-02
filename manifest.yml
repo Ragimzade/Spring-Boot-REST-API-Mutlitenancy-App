@@ -13,6 +13,7 @@ applications:
       - xsuaa
       - books-postgres-db
       - saas-registry
+      - my-logs
 
   - name: approuter
     random-route: true

@@ -3,7 +3,7 @@
   "appUrls": {
     "onSubscription" : "https://books-spring-app-courteous-guanaco-et.cfapps.us10-001.hana.ondemand.com/callback/v1.0/tenants/{tenantId}"
   },
-  "displayName" : "Books springboot app",
+  "displayName" : "Books springboot crud-app",
   "description" : "Books springboot application",
   "category" : "Custom SaaS Applications"
 }

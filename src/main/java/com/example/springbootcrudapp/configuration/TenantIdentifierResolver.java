@@ -1,6 +1,7 @@
 package com.example.springbootcrudapp.configuration;
 
 import com.sap.cloud.sdk.cloudplatform.tenant.TenantAccessor;
+import com.sap.cloud.sdk.cloudplatform.tenant.exception.TenantAccessException;
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.context.spi.CurrentTenantIdentifierResolver;
 import org.springframework.beans.factory.annotation.Value;
@@ -17,7 +18,7 @@ public class TenantIdentifierResolver implements CurrentTenantIdentifierResolver
     public String resolveCurrentTenantIdentifier() {
         try {
             return TenantAccessor.getCurrentTenant().getTenantId();
-        } catch (Exception e) {
+        } catch (TenantAccessException e) {
             log.warn("Tenant not found", e);
             return defaultTenant;
         }
