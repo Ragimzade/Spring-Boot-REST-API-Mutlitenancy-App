@@ -14,6 +14,7 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import javax.sql.DataSource;
 import java.util.HashMap;
 import java.util.Map;
+
 @Configuration
 public class HibernateConfig {
 
