@@ -1,4 +1,4 @@
-# Spring Boot REST API on BTP
+# Spring Boot REST API Mutlitenancy App
 
 ### Tutorials used for creating an application in the Cloud Foundry Environment:
 * [Create an Application with SAP Java Buildpack](https://developers.sap.com/tutorials/btp-cf-buildpacks-java-create.html)
