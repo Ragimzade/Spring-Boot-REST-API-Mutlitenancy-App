@@ -15,8 +15,8 @@ public class BookEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column
-    private int id;
+    @Column(columnDefinition = "serial", updatable = false, nullable = false, insertable = false)
+    private Long id;
     @Column
     private String name;
     @Column

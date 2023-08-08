@@ -19,7 +19,7 @@ public class SchemaPerTenantConnectionProvider implements MultiTenantConnectionP
     private final DataSource dataSource;
 
     @Value("${multitenant.defaultTenant}")
-    String defaultTenant;
+    private String defaultTenant;
 
     @Override
     public Connection getAnyConnection() throws SQLException {

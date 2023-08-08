@@ -19,6 +19,7 @@ public class BookResponse {
                 .id(String.valueOf(bookEntity.getId()))
                 .name(bookEntity.getName())
                 .author(bookEntity.getAuthor())
+                .price(bookEntity.getPrice())
                 .build();
     }
 }

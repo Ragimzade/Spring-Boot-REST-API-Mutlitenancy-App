@@ -2,13 +2,16 @@ databaseChangeLog:
   - changeSet:
       id: 1
       author: yourname
+      validCheckSum:
+        - ANY
       changes:
         - createTable:
             tableName: book
             columns:
               - column:
                   name: id
-                  type: INT
+                  type: serial
+                  autoIncrement: true
                   constraints:
                     primaryKey: true
                     nullable: false

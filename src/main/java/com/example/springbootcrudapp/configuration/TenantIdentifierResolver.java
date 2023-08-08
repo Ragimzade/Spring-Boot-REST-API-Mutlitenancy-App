@@ -16,7 +16,7 @@ import java.util.Objects;
 public class TenantIdentifierResolver implements CurrentTenantIdentifierResolver {
 
     @Value("${multitenant.defaultTenant}")
-    String defaultTenant;
+    private String defaultTenant;
 
     private static boolean isValidTenant(String tenant) {
         return Objects.nonNull(tenant) && !Objects.equals("sap-provisioning", tenant);
