@@ -7,13 +7,13 @@ import java.util.List;
 
 public interface BookService {
 
-    BookEntity getBook(int id);
+    BookEntity getBook(long id);
 
     List<BookEntity> getAllBooks();
 
-    BookEntity update(BookDto book, int id);
+    BookEntity update(BookDto book, long id);
 
-    void delete(int id);
+    void delete(long id);
 
     BookEntity create(BookDto book);
 }

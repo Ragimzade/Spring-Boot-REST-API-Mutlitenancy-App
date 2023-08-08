@@ -23,7 +23,7 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public BookEntity update(BookDto book, int id) {
+    public BookEntity update(BookDto book, long id) {
         BookEntity entity = getBook(id);
         entity.setPrice(book.getPrice());
         entity.setName(book.getName());
@@ -32,7 +32,7 @@ public class BookServiceImpl implements BookService {
         return entity;
     }
 
-    public BookEntity getBook(int id) {
+    public BookEntity getBook(long id) {
         return bookRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Book with id '%s' is not found".formatted(id)));
     }
@@ -45,7 +45,7 @@ public class BookServiceImpl implements BookService {
         return bookRepository.save(bookEntity);
     }
 
-    public void delete(int id) {
+    public void delete(long id) {
         BookEntity book = getBook(id);
         bookRepository.delete(book);
     }

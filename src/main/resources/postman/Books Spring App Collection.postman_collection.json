@@ -1,0 +1,471 @@
+{
+	"info": {
+		"_postman_id": "57fb6bef-6f50-4ab8-b326-e8ba2b2edc05",
+		"name": "Books Spring App Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25626693"
+	},
+	"item": [
+		{
+			"name": "getAllBooks",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "cc0fu9P14qrTgFeYa4U5HNYw3iY=",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://4e65b5d3trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "password_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-books-spring-app!t182903",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "books-app",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "9802357sdF",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "nurlan.rahimzada@leverx.com",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://crud-app-reflective-bushbuck-zg.cfapps.us10-001.hana.ondemand.com",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://4e65b5d3trial.authentication.us10.hana.ondemand.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://books-spring-app-courteous-guanaco-et.cfapps.us10-001.hana.ondemand.com/books",
+					"protocol": "https",
+					"host": [
+						"books-spring-app-courteous-guanaco-et",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBook",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "cc0fu9P14qrTgFeYa4U5HNYw3iY=",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://4e65b5d3trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "password_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-books-spring-app!t182903",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "books-app",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "9802357sdF",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "nurlan.rahimzada@leverx.com",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://crud-app-reflective-bushbuck-zg.cfapps.us10-001.hana.ondemand.com",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://4e65b5d3trial.authentication.us10.hana.ondemand.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://books-spring-app-courteous-guanaco-et.cfapps.us10-001.hana.ondemand.com/books/2",
+					"protocol": "https",
+					"host": [
+						"books-spring-app-courteous-guanaco-et",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"books",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createBook",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "cc0fu9P14qrTgFeYa4U5HNYw3iY=",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://4e65b5d3trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "password_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-books-spring-app!t182903",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "books-app",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "9802357sdF",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "nurlan.rahimzada@leverx.com",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://crud-app-reflective-bushbuck-zg.cfapps.us10-001.hana.ondemand.com",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://4e65b5d3trial.authentication.us10.hana.ondemand.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\" : \"A Tale of Two Cities\",\n\"author\" : \"Charles Dicken\",\n\"price\": 55\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://books-spring-app-courteous-guanaco-et.cfapps.us10-001.hana.ondemand.com/books",
+					"protocol": "https",
+					"host": [
+						"books-spring-app-courteous-guanaco-et",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateBook",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "cc0fu9P14qrTgFeYa4U5HNYw3iY=",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://4e65b5d3trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "password_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-books-spring-app!t182903",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "books-app",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "9802357sdF",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "nurlan.rahimzada@leverx.com",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://crud-app-reflective-bushbuck-zg.cfapps.us10-001.hana.ondemand.com",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://4e65b5d3trial.authentication.us10.hana.ondemand.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\" : \"A Tale of Two Cities\",\n\"author\" : \"Charles Dicken\",\n\"price\": 5566\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://books-spring-app-courteous-guanaco-et.cfapps.us10-001.hana.ondemand.com/books/3",
+					"protocol": "https",
+					"host": [
+						"books-spring-app-courteous-guanaco-et",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"books",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteBook",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "cc0fu9P14qrTgFeYa4U5HNYw3iY=",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://4e65b5d3trial.authentication.us10.hana.ondemand.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "password_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "sb-books-spring-app!t182903",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "books-app",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "9802357sdF",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "nurlan.rahimzada@leverx.com",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://crud-app-reflective-bushbuck-zg.cfapps.us10-001.hana.ondemand.com",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://4e65b5d3trial.authentication.us10.hana.ondemand.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://books-spring-app-courteous-guanaco-et.cfapps.us10-001.hana.ondemand.com/books/2",
+					"protocol": "https",
+					"host": [
+						"books-spring-app-courteous-guanaco-et",
+						"cfapps",
+						"us10-001",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"books",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
