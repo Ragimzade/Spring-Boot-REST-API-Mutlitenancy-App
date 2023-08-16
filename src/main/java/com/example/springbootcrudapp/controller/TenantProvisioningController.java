@@ -20,7 +20,7 @@ import java.sql.SQLException;
 @RequiredArgsConstructor
 public class TenantProvisioningController {
 
-    private static final String APPROUTER_DOMAIN = "-approuter-courteous-whale-ib.cfapps.us10-001.hana.ondemand.com";
+    private static final String APPROUTER_DOMAIN = "-approuter-xv.cfapps.us10-001.hana.ondemand.com";
     private static final String HTTPS = "https://";
     private static final String SUBDOMAIN_KEY ="subscribedSubdomain";
     private final TenantProvisioningService tenantProvisioningService;
