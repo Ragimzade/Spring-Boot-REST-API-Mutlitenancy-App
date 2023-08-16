@@ -72,3 +72,21 @@ cf ssh -L 63305:postgres-e41ca1a6-9d2e-4eba-9e7d-a07c124e0174.cqryblsdrbcs.us-ea
 5. **Access your service instance from Intelij Idea**
 
 ![img.png](src/main/resources/img.png)
+
+### Commands to run MTA application:
+- Install the MultiApps CF CLI Plugin:
+  `cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org`
+  `cf install-plugin multiapps`
+- Deploy the MTA
+  `cd  <path to my_first_mta>`
+  `cf deploy ./`
+- To check the application, execute
+  `cf apps`
+- To check the service, execute
+  `cf services`
+
+## Useful CF commands:
+`cf map-route approuter cfapps.us10-001.hana.ondemand.com --hostname tenant2-vecqi4nt-approuter-xv
+`
+### Create a route for a consumer subaccount
+
